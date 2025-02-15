@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Upload Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Photo Upload Website</h1>
+        <input type="file" id="photoUpload" onchange="previewPhoto()">
+        <br><br>
+        <input type="text" id="phoneNumber" placeholder="Enter your phone number">
+        <br><br>
+        <button onclick="login()">Log In</button>
+        <div id="verificationCode" style="display: none;">
+            <p>Your 8-digit code: <span id="code"></span></p>
+            <a href="#" id="whatsappLink" target="_blank">Set as WhatsApp DP</a>
+        </div>
+        <br>
+        <footer>Created by Anjan</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
